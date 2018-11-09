@@ -1,0 +1,8 @@
+#!/usr/bin/env python
+
+class Person:
+def __init__(self, name):
+self.name = name
+def greet(self, other_name):
+self.other_name = other_name
+return "Hi {0}, my name is {1}".format(self.other_name, self.name)
