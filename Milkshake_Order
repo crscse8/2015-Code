@@ -1,0 +1,81 @@
+#Code is for ordering a milkshake via touch screen
+
+print "Welcome to SugarShake Ice Cream Shop!"
+
+print "We specialize in signature milkshakes made with organic ice cream."
+
+print "Use the touch screen to customize your order. Press 0 to skip items you don't want."
+
+flavor = raw_input("Ice cream: \n1-chocolate \n2-vanilla \n3-strawberry \n4-coffee \n5-green tea \n6-passion fruit")
+
+mix = raw_input("You can mix ONE candy into the ice cream: \n1-carob chips \n2-cookie crumbles \n3-peanut butter \n4-mango pieces, \n5-strawberry pieces \nOR Press 0 to skip")
+
+toppings = raw_input("Would you like: \n1-hot fudge \n2-caramel sauce \nor skip?")
+
+last = raw_input("How about: \n1-whipped cream and cherry \nor skip?")
+
+print "So far, so good..."
+
+if flavor == '1':
+print 'chocolate'
+
+elif flavor == '2':
+print 'vanilla'
+
+elif flavor == '3':
+print 'strawberry'
+
+elif flavor == '4':
+print 'coffee'
+
+elif flavor == '5':
+print 'green tea'
+
+else:
+print 'passion fruit'
+
+if mix == '1':
+print 'carob chips'
+
+elif mix == '2':
+print 'cookie crumbles'
+
+elif mix == '3':
+print 'peanut butter'
+
+elif mix == '4':
+print 'mango pieces'
+
+elif mix == '5':
+print 'strawberry pieces'
+
+else:
+print 'no candy'
+
+if toppings == '1':
+print 'hot fudge'
+
+elif toppings == '2':
+print 'caramel sauce'
+
+else:
+print 'no toppings'
+
+if last == '1':
+print "whipped cream and cherry"
+
+else:
+print 'no whip/cherry'
+
+total = 0.0
+if int(flavor) > 0:
+total += 2.0
+if int(mix) > 0:
+total += 1.0
+if int(toppings) > 0:
+total += 0.5
+if int(last) > 0:
+total += 0.5
+
+print 'Order total: $%.2f' % total
+
